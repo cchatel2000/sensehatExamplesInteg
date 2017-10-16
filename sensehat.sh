@@ -1,0 +1,2 @@
+cd sensehat/
+./mainSH.py
