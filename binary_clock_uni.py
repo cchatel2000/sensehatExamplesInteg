@@ -3,6 +3,8 @@
 #import unicornhat as hat
 from sense_hat import SenseHat
 import time, datetime
+import enterMod
+import sys
 
 hat = SenseHat()
 hat.set_rotation(180)
@@ -38,3 +40,7 @@ while True:
     display_binary(t.microsecond / 10000, 6, hundrefths_color)
     #hat.show()
     time.sleep(0.0001)
+    c=enterMod.getKey()
+    if c==1:
+       sense.clear([0,0,0])
+       sys.exit()

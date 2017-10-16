@@ -98,7 +98,7 @@ def handle_code(code):
                  subprocess.call([sys.executable, 'game_of_life_sense.py'])
            if (x==1):
               if (y==0):
-                 subprocess.call([sys.executable, 'white.py'])
+                 subprocess.call([sys.executable, 'black.py'])
               if (y==1):
                  subprocess.call([sys.executable, 'black.py'])
               elif (y==2):
